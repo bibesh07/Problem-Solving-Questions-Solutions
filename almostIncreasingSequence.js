@@ -52,7 +52,7 @@
 
 /* Apparently the easiest solution to this question is(Not solved by me) : */ 
 
-function (almostIncreasingSequence(sequence) {
+function almostIncreasingSequence(sequence) {
 	var count =0;
 	for( int i=0; i< sequence.length; i++) 
 		if(sequence[i] <= sequence[i-1]){
