@@ -16,7 +16,7 @@
 	
 	SOLUTION:
 	function almostIncreasingSequence(sequence) {
-  	return answer(sequence);
+  		return answer(sequence);
 	}
 
 	function answer(array) {
@@ -41,11 +41,26 @@
 		 return true;
 	 }
 
-//This function works as well
-//function reduce_this(arr) {
-//  const yes = arr.reduce((acc, x, i) => {
-//        if (i==0) return acc;
-//        return acc + (arr[i]>arr[i-1]?0:1);
-//    }, 0);
-//    return yes == 0;
-//}
+	/*This function works as well
+	function reduce_this(arr) {
+	  const yes = arr.reduce((acc, x, i) => {
+	        if (i==0) return acc;
+	        return acc + (arr[i]>arr[i-1]?0:1);
+	    }, 0);
+	    return yes == 0;
+	}*/
+
+/* Apparently the easiest solution to this question is(Not solved by me) : */ 
+
+function (almostIncreasingSequence(sequence) {
+	var count =0;
+	for( int i=0; i< sequence.length; i++) 
+		if(sequence[i] <= sequence[i-1]){
+			count++;
+			if(count > 1)
+				return false;
+			if(sequence[i] <= sequence[i-2] && sequence[i+1]<=sequence[i-1])
+				return false;
+		}
+	return true;
+}
