@@ -1,8 +1,8 @@
 # Problem-Solving-Questions-Solutions
-Set of Problem solving questions and answeres
-Q. Iterate through an object and print out the results.
+#Set of Problem solving questions and answeres
+#Q. Iterate through an object and print out the results.
 
-A=> (solved in ts for ng-6)
+#A=> (solved in ts for ng-6)
   import { Component } from '@angular/core';
 
 @Component({
