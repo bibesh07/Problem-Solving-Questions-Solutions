@@ -4,9 +4,9 @@
 
 #Example
 
-//For inputString = "aabaa", the output should be
-//checkPalindrome(inputString) = true;
+#For inputString = "aabaa", the output should be
+#checkPalindrome(inputString) = true;
 
-//A =>
+#A =>
   def checkPalindrome(inputString):
     return (inputString[::-1] == inputString);
