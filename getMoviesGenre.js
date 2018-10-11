@@ -29,7 +29,7 @@ let genre_keys = {
 }
 
 //get allgenres type without repatition
-let allGeneres = Array.from(new Set([].concat.apply([], movies.map(m => m.genere_ids)))).sort();
+let allGeners = Array.from(new Set([].concat.apply([], movies.map(m => m.genere_ids)))).sort();
 
 //get genres to name without repetition. you can see that Horror movie is moving from the list because the api doesnt return any movies with genere id 1.
-allGeneres.map(g => genre_keys[g]);
+allGeners.map(g => genre_keys[g]);
