@@ -1,4 +1,4 @@
-#Popular childhood game (rock, paper, scissor) simplified using JSON and JS.
+//Popular childhood game (rock, paper, scissor) simplified using JSON and JS.
 
 let choices = ['rock','paper','scissor'];
 
