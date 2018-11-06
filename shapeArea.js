@@ -9,6 +9,4 @@
 //shapeArea(n) = 13.
 
 //A =>
-  function shapeArea(n) {
-    return (Math.pow(n, 2) + Math.pow(n-1, 2));
-}
+  shapeArea = (n) => (Math.pow(n, 2) + Math.pow(n-1, 2));
