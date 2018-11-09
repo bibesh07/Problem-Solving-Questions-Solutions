@@ -11,27 +11,32 @@
 //SOLUTION
 import java.util.Scanner;
 
-class Main {
+class noOfFactorials {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int numToTest = sc.nextInt();
     int sum = 0;
     int count =0;
-    int[] factorialNums = new int[numToTest];
+    int[] factorialNums = new int[numToTest+3];
     int tempNum = numToTest;
-    for(int i=1;i <numToTest;i++) {
+
+    for(int i=1;i<factorialNums.length;i++) {
       factorialNums[i] = GetFactorial(i); 
     }
 
-    while(sum < numToTest) {
-      for(int i=0; i<factorialNums.length;i++) {
-        if(factorialNums[i] <= tempNum && factorialNums[i+1] > tempNum) {
-          tempNum = tempNum - factorialNums[i];
-          sum += factorialNums[i];
-          count++;
-          break;
+    if(numToTest != 1) {
+      while(sum < numToTest) {
+        for(int i=0; i<factorialNums.length;i++) {
+          if(factorialNums[i] <= tempNum && factorialNums[i+1] > tempNum) {
+            tempNum = tempNum - factorialNums[i];
+            sum += factorialNums[i];
+            count++;
+            break;
+          }
         }
       }
+    } else {
+      count = 1;
     }
 
     System.out.println(count);
