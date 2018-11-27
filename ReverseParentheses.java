@@ -22,28 +22,23 @@
   5 ≤ s.length ≤ 55.
 */
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
-import java.util.Stack;
 public class ReverseParentheses {
-
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String in = sc.nextLine();
-		System.out.println(reverseParentheses(in));
+	   Scanner sc = new Scanner(System.in);
+	   String in = sc.nextLine();
+	   System.out.println(reverseParentheses(in));
 	}
 	
 	public static String reverseParentheses(String s) {
 	    int indexOfStart = s.lastIndexOf('(');
 	    while(indexOfStart != -1) {
-			int indexOfEnd = s.indexOf(')', indexOfStart);
-			StringBuffer reverseString = new StringBuffer(s.substring(indexOfStart+1, indexOfEnd));
-			s = s.substring(0, indexOfStart) + reverseString.reverse() + s.substring(indexOfEnd+1, s.length());
-			indexOfStart = s.lastIndexOf('(');		
-		}
+		int indexOfEnd = s.indexOf(')', indexOfStart);
+		StringBuffer reverseString = new StringBuffer(s.substring(indexOfStart+1, indexOfEnd));
+		s = s.substring(0, indexOfStart) + reverseString.reverse() + s.substring(indexOfEnd+1, s.length());
+		indexOfStart = s.lastIndexOf('(');		
+	     }
 			
-		return s;
+	     return s;
 	}
-
 }
