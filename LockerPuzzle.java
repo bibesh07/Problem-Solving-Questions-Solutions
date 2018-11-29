@@ -9,7 +9,6 @@ After all the students have passed through the building and changed the lockers,
 are open?
  */
 import java.util.Scanner;
-import java.io.*;
 
 public class LockerPuzzle {
 	public static void main(String[] args) {
