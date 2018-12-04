@@ -1,5 +1,5 @@
 //Popular childhood game (rock, paper, scissor) simplified using JSON and JS.
-
+//Simply paste the code into your console and press enter. Have fun :) :D
 let choices = ['rock','paper','scissor'];
 
 let winChart = {
