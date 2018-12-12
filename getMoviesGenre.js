@@ -28,8 +28,8 @@ let genre_keys = {
     '10' : 'Crime',
 }
 
-//get allgenres type without repatition
+//get allgenres type without repetition
 let allGeners = Array.from(new Set([].concat.apply([], movies.map(m => m.genere_ids)))).sort();
 
-//get genres to name without repetition. you can see that Horror movie is moving from the list because the api doesnt return any movies with genere id 1.
+//get genres to name without repetition. you can see that Horror movie is moved from the list because the api doesnt return any movies with genere id 1.
 allGeners.map(g => genre_keys[g]);
