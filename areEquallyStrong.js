@@ -15,6 +15,6 @@ SOLUTION:
 
 function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
     var myArms = [yourLeft, yourRight];
-    var friendsArms = [friendsLeft, friendsRight].filter((a,b) => b-a);
+    var friendsArms = [friendsLeft, friendsRight];
     return (yourLeft+yourRight == friendsLeft+friendsRight && friendsArms.indexOf(myArms[0]) != -1);
 }
